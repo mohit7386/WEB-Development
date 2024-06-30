@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card</title>
+    <style>
+        .main {
+            padding: 200px 0px 300px 0px;
+            margin: 0px auto;
+            width: 19.83%;
+            height: 0.3vh;
+            box-shadow: 0px 0px 10px rgb(126, 125, 125);
+            position: relative;
+            border-radius: 10px;
+            margin-top: 45px;
+            border: 1px solid rgb(239, 236, 236);
+            /* border: px dotted black; */
+            /* background-color: rgb(44, 13, 13); */
+        }
+
+        .main:hover {
+            box-shadow: 0px 0px 10px black;
+            transition: transform 1s ease-in-out;
+            /* transition: 0.5s ease; */
+        }
+
+        img {
+            position: absolute;
+            top: 7px;
+            left: 7px;
+            border-radius: 10px;
+        }
+
+        .nature {
+            position: absolute;
+            top: 220px;
+            border: 1px solid lightgray;
+            border-radius: 9px;
+            padding: 0.2px 1px 2px 5.2px;
+            width: 38.3px;
+            color: grey;
+            margin: 0px 0px 0px 25px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 13px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .lake {
+            position: absolute;
+            top: 220px;
+            border: 1px solid lightgray;
+            border-radius: 9px;
+            cursor: pointer;
+            padding: 0.2px 1px 2px 0px;
+            text-indent: 5px;
+            width: 30px;
+            color: grey;
+            margin: 0px 0px 0px 80px;
+            font-weight: 600;
+            font-size: 13px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .inter {
+            margin: 40px 50px 50px 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 14px;
+            color: rgb(69, 67, 67);
+        }
+
+        .aman {
+            width: 265px;
+            color: grey;
+            margin-top: -10px;
+        }
+
+        button {
+            margin: 0px 50px 0px 70px;
+            padding: 12px;
+            border-radius: 8px;
+            width: 120px;
+            font-weight: bold;
+            color: rgb(14, 166, 226);
+            background-color: rgb(178, 220, 247);
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            color: white;
+            background-color: rgb(82, 183, 247);
+        }
+
+        .lucky {
+            text-align: center;
+        }
+
+        .Cars:hover {
+            color: white;
+            background-color: rgb(48, 46, 46);
+        }
+
+        .Cars {
+            position: absolute;
+            top: 220px;
+            border: 1px solid lightgray;
+            border-radius: 9px;
+            padding: 0.2px 1px 1px 5.2px;
+            width: 61.3px;
+            color: grey;
+            margin: 0px 0px 0px 121.1px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 13px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .Asth:hover {
+            color: white;
+            background-color: rgb(48, 46, 46);
+        }
+
+        .Asth {
+            position: absolute;
+            top: 220px;
+            border: 1px solid lightgray;
+            border-radius: 9px;
+            padding: 0.2px 1px 1px 5.2px;
+            width: 70px;
+            color: grey;
+            margin: 0px 0px 0px 197.5px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 13px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .nature:hover {
+            color: white;
+            background-color: rgb(48, 46, 46);
+        }
+
+        .lake:hover {
+            color: white;
+            background-color: rgb(48, 46, 46);
+        }
+
+        .rishi:hover {
+            text-shadow: 0px 4px 12px rgb(66, 65, 65);
+            /* opacity: 0.9; */
+        }
+        /* For phones (max-width: 576px) */
+        @media only screen and (max-width: 480px) {
+            .lucky{
+                text-align: center;
+                margin-left: 5px ;
+            }
+            .main{
+                width: 302px;
+            }
+            .rishi{
+                font-size: 25px;
+                font-family:Arial, Helvetica, sans-serif;
+                /* font-weight: 800; */
+            }
+            .main{
+                height: 8vh;
+            }
+            .aman{
+                font-size: 17px;
+                
+            }
+        }
+
+        /* For tablets (min-width: 577px) and (max-width: 1024px) */
+        @media only screen and (min-width: 481px) and (max-width: 1200px) {
+            h2.lucky{
+                text-align: center;
+                margin-left: 5px;
+            }
+            .main{
+                width: 302px;
+            }
+            
+            
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <h2 class="lucky">My Business Card</h2>
+    <div class="ryukendo">
+        <div class="main">
+            <img src="./istockphoto-1209197358-612x612.jpg" width="288px" alt="Sea image with man">
+            <div class="nature">HTML</div>
+            <div class="lake">CSS</div>
+            <div class="Cars">Javascript</div>
+            <div class="Asth">Git&Github</div>
+            <br>
+            <div class="inter">
+                <h2 class="rishi">Mohit Pratap Singh</h2>
+                <p class="aman">I'm a Pro coder, adept at crafting digital solutions. With my expertise, I revolutionize
+                    industries and drive innovation through the power of code. Transforming the world one line at a
+                    time. Let's innovate Together!.</p>
+                <button>Read More</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

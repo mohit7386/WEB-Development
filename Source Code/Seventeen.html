@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-indent: 20px;
+        }
+
+        p {
+            text-align: justify;
+            margin: 20px;
+        }
+
+        .box {
+            border: 2px solid black;
+            /* box-sizing: border-box;  */
+            /* width: 90vw;    */
+            padding: 50px;
+            margin: 10px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .box1 {
+            background-color: lightyellow;
+            position: sticky;
+            top: 0px;
+            z-index: 0;
+            /*When we want to stack up the images one another then we use this property when you set 1 or something greater then 0 then the container or image will stack up on the other image..Jiska z-index high hoga wo image upar aayegi jiska kam hoga wo image neeche aayegi*/
+        }
+
+        .box2 {
+            background-color: black;
+            position: fixed;
+            bottom: 0px;
+            right: -10px;
+            padding: 20px;
+            border-radius: 11px;
+        }
+        .box3 {
+            background-color: lightpink;
+            position: absolute;
+            /*Always positioned  relative to the nearest ancestor. If there is no positioned ancestor then it always relative to the viewport*/
+            top: 230px;
+            width: 320px;
+        }
+
+        .box4 {
+            background-color: lightskyblue;
+            position: absolute;
+            bottom: 0px;
+            width: 400px;
+        }
+
+        .parent {
+            border: 3px solid black;
+            margin: 10px;
+            padding: 20px;
+            height: 80vh;
+            position: relative;/*When you are setting the relative position then all absolute and sticky postioned will relative to this box*/
+        }
+        .mohit {
+            margin: 20px;
+            /* text-indent: 30px; */
+            text-align: justify;
+        }
+        .lucky{
+            margin: 20px;
+            font-size: 18px;
+            font-style: italic;
+            /* font-weight: px; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS Positioning</h2>
+    <div class="parent">
+        <div class="box box1">I am Sticky</div>
+        <div class="box box2"></div>
+        <div class="box box3">I am absolute</div>
+        <div class="box box4">I am also absolute</div>
+    </div>
+    <div class="mohit">
+        <h3>Let's go through each type of CSS positioning and its common uses:</h3><br>
+
+        <li>Static Positioning:</li><br>
+
+        <p>This is the default positioning for all HTML elements.
+            Elements are positioned according to the normal flow of the document.
+            You typically don't need to explicitly set position: static;, as it's the default behavior.</p><br>
+        <li>Relative Positioning:</li><br>
+
+        <p>Elements are positioned relative to their normal position in the document flow.
+            When you apply position: relative; to an element, you can use top, right, bottom, and left properties to
+            offset
+            it from its normal position.
+            Commonly used for fine-tuning the position of elements within their containing block or to create simple
+            animations.</p><br>
+        <li>Absolute Positioning:</li><br>
+
+        <p>Elements are removed from the normal document flow and positioned relative to their nearest positioned
+            ancestor.
+            If no positioned ancestor is found, they're positioned relative to the initial containing block (usually the
+            viewport).
+            Useful for creating overlays, pop-up modals, or elements that need to be precisely positioned within their
+            parent container.</p><br>
+        <li>Fixed Positioning:</li><br>
+
+        <p>Elements are positioned relative to the viewport and do not move when the page is scrolled.
+            Commonly used for creating elements that should remain in a fixed position on the screen, such as navigation
+            bars or headers.</p><br>
+        <li>Sticky Positioning:</li><br>
+
+        <p>Elements behave like relative positioning until they reach a specified threshold, then they become fixed
+            positioning.
+            When you apply position: sticky;, you typically also specify top, right, bottom, or left properties to
+            determine
+            the threshold where the element becomes fixed.
+            Useful for creating elements that should stick to a specific position on the screen as the user scrolls,
+            such as
+            sticky headers or sidebars.
+            Each type of positioning has its own use cases, and understanding when to use each one can help you create
+            more
+            effective and dynamic layouts for your web pages.</p>
+    </div>
+    <p class="lucky">Note:- transform , filter and perspective property can also the element appear as positioned. when you apply the property in any of these then you will see it will look like position:relative there is no change so that's why these three properties also appear as positioned.</p>
+
+</body>
+
+</html>

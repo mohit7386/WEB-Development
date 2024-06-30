@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Web page</title>
+    <link rel="stylesheet" href="Two.css">
+</head>
+<body>
+    <h1>Learning Tables..</h1>
+    <br>
+    <table>
+        <caption>Employee Details</caption><!--Caption tag is used for putting the caption into the table-->
+        <br>
+        <tr>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Designation</th>
+        </tr>
+        <tr>
+            <td>Mohit Pratap Singh</td>
+            <td>B.Tech</td>
+            <td>Computer Programmer</td>
+        </tr>
+        <tr>
+            <td>Srishti Singh</td>
+            <td>B.Ed</td>
+            <td>Student</td>
+        </tr>
+        <tr>
+            <td>Sejal Singh</td>
+            <td>DEl.Ed</td>
+            <td>Student</td>
+        </tr>
+        <tr>
+            <td>Krish Singh</td>
+            <td>9th</td>
+            <td>Student</td>
+        </tr>
+    </table>
+    <br>
+    <h1>Colspan Property</h1>
+    <table>
+    <tr>
+        <th>Name</th>
+        <th>Course</th>
+        <th>Designation</th>
+    </tr>
+    <tr>
+        <td>Mohit Pratap Singh</td>
+        <td>B.Tech</td>
+        <td>Computer Programmer</td>
+    </tr>
+    <tr>
+        <td colspan="2">Mohit Pratap Singh</td> <!--with the help of colspan property two columns are merging with one another and make one column-->
+    <!--NOTE- one thing kept in mind agar hum colspan use kar rahe hain to humein iss baat ka dhiyaan rakhna padega ki table ka format na bigde isiliye hum table data to dekh ke fill karenge-->
+        <td>Computer Programmer</td>
+    </tr>
+</table>
+<ul><li>Here in second row <b>name</b> takes space of the course. It merges with the column second and take the space of second column</li></ul>
+<br>
+<h1>Rowspan Property</h1>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Course</th>
+    </tr>
+    <tr>
+        <td>Mohit Pratap Singh</td>
+        <td>B.Tech
+        </td>
+
+    </tr>
+    <tr>
+        <td rowspan="2">Srishti Singh</td>
+        <td>B.Ed</td>
+    </tr>
+    <tr>
+        <td>DEl.Ed</td>
+    </tr>
+</table>
+<ul><li>Here it takes the space of the second row and merging with the second row this is what the rowspan property do..</li></ul>
+<h3>Example of a inline element</h3>
+<span>This is <strong>important</strong> text. It's a inline element it do not starts from the new line it takes the width on the basis of their need.</span>
+<br>
+<h3>Exampke of a block level element</h3>
+<p class="mohit">Lorem ipsum dolor sit amet.</p>
+<ul><li>It is a block level element. It always takes the full width and starts from the new line. it occupies the whole space</li></ul>
+
+<h1>List</h1>
+<p>List are of two types :-</p><p> 1- Unordered List</p><p> 2- Ordered List </p>
+<br>
+<h2>Unordered list</h2>
+<h4>Write your favourite games..</h4>
+<ul>
+    <li>GTA-Vice City</li>
+    <li>GTA-Sanandreas</li>
+    <li>GTA-V</li>
+    <li>Chess</li>
+    <li>Mission Games</li>
+    <li>Superhero Games</li>
+</ul>
+<p>This is the unordered list which has no order it only starts with bullet points..<strong>we can also change the type of the bullet points.</strong></p>
+<h4>Change the style of the bullet points</h4>
+<ul type="square"> <!--type attribute is used to set the which type of style of the bullet point is kis type ka bullet point ka style aap rakhna chahte ho:-->
+    <li>GTA-Vice City</li>
+    <li>GTA-Sanandreas</li></ul>
+    <h4>Change the style of the bullet points</h4>
+    <ul type="circle">
+    <li>GTA-V</li>
+    <li>Chess</li>
+</ul>
+<h2>Ordered List</h2>
+<h4>Write your Brothers and sisters name</h4>
+<ol>
+    <li>Aman Sisodia</li>
+    <li>Katta Bhai</li>
+    <li>Seema</li>
+    <li>Omendar</li>
+    <li>Keeru</li>
+</ol>
+<p>This is the ordered list it only starts in order like number, alphabets, Roman Numbers..<strong>we can also change the type of the order.</strong></p>
+<h4>Change the style of the order</h4>
+<ol type="A">
+    <li>Aman Sisodia</li>
+    <li>Katta Bhai</li>
+    <li>Seema</li></ol>
+    <h4>Change the order of the list into roman numbers.</h4>
+    <ol type="i">
+    <li>Omendar</li>
+    <li>Keeru</li>
+</ol>
+</body>
+</html>

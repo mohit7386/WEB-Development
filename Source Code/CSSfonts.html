@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts , Text decoration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Stick+No+Bills:wght@200..800&display=swap"
+        rel="stylesheet">
+    <style>
+        h1 {
+            font-family: "poppins", sans-serif;
+            font-weight: 500;
+        }
+
+        p {
+            font-family: "Stick No Bills", sans-serif;
+            font-size: 25px;
+        }
+
+        .lucky {
+            font-style: italic;
+        }
+
+        .mohit {
+            font-weight: 900;
+        }
+
+        .aman {
+            text-decoration: underline;
+            text-decoration-color: blueviolet;
+            text-decoration-thickness: 3px;
+            text-indent: 34px;
+        }
+
+        .kittu {
+            line-height: 1.7;
+            /*Line height basically used for to give the space in between the lines of any paragraph.*/
+        }
+
+        .krishna {
+            letter-spacing: 17px;
+            /*It is useed to create the space between the letters*/
+        }
+
+        .radha {
+            text-transform: uppercase;
+        }
+
+        .vishnu {
+            font-family: normal;
+            border: 2px solid black;
+            width: 78px;
+            overflow: hidden;
+            /*Used to hide the overflow text from the border*/
+            text-overflow: ellipsis;
+            /*Used to style the overflow text. ellipsis style your overflow text into the dotted form.*/
+        }
+
+        .keeru {
+            font-family: normal;
+            width: 55px;
+            border: 2px solid black;
+            word-break: break-all;
+            /*It is used to break the word when the line ends*/
+        }
+
+        body {
+            border: 3px solid black;
+            margin: 5px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Fonts</h1>
+    <p>Hey There I am Paragraph I belongs to font family</p>
+    <p class="lucky">I am a Italic Tag</p>
+    <p class="mohit">Hey I am also paragraph and I will show you the effect of font-weight</p>
+    <p class="aman">I am also a paragraph tag and Underline cover ups me.</p>
+    <p class="kittu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores totam laudantium tempore veniam
+        inventore ullam sint, itaque aperiam, earum eaque numquam nobis, fugiat porro quisquam et esse molestias cumque
+        similique vitae voluptates. Perferendis neque quia fugit aliquam dolore error, dolor voluptatem totam optio,
+        assumenda excepturi reiciendis aut, nulla odio nobis ullam rerum quos ipsam minima quae voluptatum quis deleniti
+        sed unde. Numquam odit ipsa voluptas expedita, placeat in itaque, veritatis nesciunt repellendus ab accusamus
+        inventore eveniet libero amet recusandae sit culpa. Error necessitatibus quos nisi, consequuntur tempora eum
+        minus odio exercitationem eos magni soluta, delectus cupiditate, sit iusto tempore dolores iure laudantium hic
+        alias veniam doloribus corrupti quasi! Obcaecati consectetur magnam aut odio illo quasi, minima perferendis
+        eveniet quod facilis!</p>
+    <p class="krishna ">This is letter spacing</p>
+    <p class="radha"> Text Transform Property</p>
+    <p class="vishnu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ea magnam est quo! Voluptat
+        voluptatem sint! A?</p>
+    <h2>See the effect of word-break Property</h2>
+    <p class="keeru">Lorem ipsum dolor sit amet consectetur adipisic tempore debitis.</p>
+</body>
+
+</html>

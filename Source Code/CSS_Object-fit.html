@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object fit and position</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+            width: 99.4%;
+            height: 80vh;
+            grid-template-columns: 1fr 1fr 1fr;
+            /* grid-template-rows: 1fr; */
+            border: 5px solid black;
+            gap: 5px;
+        }
+        .box{
+            background-color: aquamarine;
+            border: 2px solid black;
+            height: 80vh;
+            width: 25vw;
+            margin: 0px 45px;
+        }
+        .box-1 img{
+            width: 360px;
+            height: 270px;
+            object-fit: cover; /* When applied with the value cover, it scales the content to be as large as possible while ensuring that both its width and height fully cover the container, without distorting the aspect ratio and this property is only applicable on the image not the container*/
+        }
+        .box-2 .image1{
+            width: 300px;
+            height: 200px;
+            object-fit: contain; /*Contain ki help se image poori display ho jaati hai given width and height mein jo image ki given width and height hai*/
+        }
+        .box-2 .image2{
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            object-position: top right;
+        }
+        .box-3 .image3{
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            object-position: 125px 30px; /*We can also use percentage in place of pixels*/
+        }
+        .box-3 .image4{
+            width: 300px;
+            height: 200px;
+            background-image: url(https://www.wallpaperflare.com/multicolored-brain-illustration-human-brain-painting-abstract-wallpaper-qop);
+            background-position: center;
+            background-repeat: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="big-container">
+    <div class="container">
+        <div class="box box-1"><p>Using Object Cover Property it shows as large as possible with maintain the aspect ratio..</p><img src="./wallpaperflare.com_wallpaper (5).jpg"></div>
+        <div class="box box-2"><p>Using object contain property it shows the full image in the given width and height..</p><img src="./wallpaperflare.com_wallpaper (5).jpg"class="image1"><p>Using object position property we can change the view of the image apni marzi ke according ki konsi part image ka show karna hai konsa nahi karna hai..</p><img src="./wallpaperflare.com_wallpaper (5).jpg"class="image2"></div>
+        <div class="box box-3"><p>Using object position pixel value we can move the image here and there and set the image as we want...</p><img src="./wallpaperflare.com_wallpaper (5).jpg"class="image3"><p>Here we are using background image </p><img src="./wallpaperflare.com_wallpaper (5).jpg"class="image4"></div>
+    </div>
+</div>
+</body>
+</html>

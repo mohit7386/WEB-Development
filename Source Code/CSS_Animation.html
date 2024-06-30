@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container{
+            background-color: lightpink;
+            height: 20vh;
+            width: 20vw;
+        }
+        .box1{
+            background-color: lightseagreen;
+            height: 11vh;
+            width: 6vw;
+            padding: 5px;
+            border: 2px solid black;
+            /*first you have to declare the animation using keyframes with the name of the animation and after that you can apply the properties in it*/
+            animation: luckykaAnimation; /*After declaring the animation using keyframe property then you need to use the animation firstly use use the animation name property then use all of these*/
+            animation-duration: 2s;
+            animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse; 
+            /*Shorthand Property for the animation in CSS*/
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            border-radius: 100%;
+            /* position: absolute; */
+            /* z-index:1; */
+        }
+        @keyframes luckykaAnimation{/*Declaring the animation with their name*/
+            from{
+                
+                  transform: translateX(10px);
+            }
+            to{
+                background-color: red;
+                  transform: translateY(504.3px);
+            }
+        }
+        .box2{
+            background-color: lightskyblue;
+            height: 4vh;
+            width: 6vw;
+            transform: translateY(5px);
+            animation: luckykaAnimation2 3s cubic-bezier(0.215, 0.610, 0.355, 1) infinite,luckykaAnimation3 2s cubic-bezier(0.215, 0.610, 0.355, 1) infinite; /*here we can write multiple animations in a single property by using their different names*/
+            /* position: absolute; */
+        }
+        @keyframes luckykaAnimation2{
+            from{
+
+            }
+            to{
+                background-color: yellow;
+                transform: translateY(0px)scale(5.4) translateX(120px); /*translateX use karne par ye X-axis se space chod dega jitne pixel di hai utne pixel ki and same as for Y*/
+            }
+        }
+        @keyframes luckykaAnimation3{
+            0%{
+                transform: rotate(100deg);
+            }
+            10%{
+                transform: rotate(180deg);
+            }
+            20%{
+                transform: rotate(260deg);
+            }
+            30%{
+                transform: rotate(320deg);
+            }
+        }
+    </style>
+</head>
+<body><h2>CSS Animations</h2>
+    <div class="container">
+        <div class="box box1">
+        </div>
+        <div class="box box2">BOX2</div>
+    </div>
+</body>
+</html>

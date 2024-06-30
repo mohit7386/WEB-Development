@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+         .box{
+            background-color: aqua;
+            
+         }
+         .box:hover{
+            background-color: black;
+            color: white;
+         }
+         .box1{
+            color: red;
+            padding: 20px;
+            border: 2px solid black;
+            margin: 70px;
+            height: 80px;
+            box-sizing: border-box;
+         }
+         .box2{
+            color: blue;
+            padding: 20px;
+            border: 2px solid black;
+            margin: 20px;
+            height: 80px;
+            box-sizing: border-box;
+         }
+         ul{
+            margin: 25px;
+         }
+         p{
+            margin: 20px;
+         }
+         .ryukendo{
+            text-decoration: underline;
+            margin: 20px;
+         }
+    </style>
+</head>
+<body>
+    
+    <h1 class="box box1">I am the Box</h1> <!--We can add multiple classes in one element but we cannot add multiple id in one element because id is unique identifier to every tag.-->
+    <h1 class="box box2">I am the Box2</h1>
+    <br><br>
+    <h1 class="ryukendo">CSS BOX MODEL</h1>
+    <br>
+    <p>The CSS Box model defines how elements are rendered and how their dimensions are calculated.
+
+        It describes the structure of an element as a rectangular box that has content, padding, a border, and a margin.
+        
+        The box model consists of four main components,
+        <br> which are: 
+    <ul>
+        <li>Content</li>
+        <li>padding</li>
+        <li>border</li>
+        <li>margin</li>
+    </ul></p><p>when we are applying the margins of two boxes and then margin collapse issue is raising so the greater margin will display and the other margin smaller margin will ignore it..let's see the example of 2 boxes in the upper side of the code..</p>
+</body>
+</html>

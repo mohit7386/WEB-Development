@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        h2{
+            background-color: lightcoral;/*Element Selector*/
+        }
+        .mohit{
+            background-color: lightgreen; /*Class Selector*/
+        }
+        #aman{
+            background-color: lightskyblue; /*Id Selector*/
+        }
+        div{/*Element Selector*/
+            background-color: red;
+            padding: 20px;
+        }
+        div > p{ /*Child Selector - apply only when the paragraph is a direct child of the div*/
+            background-color: yellow;
+            padding: 20px;
+            font-size: 24px;
+        }
+        h4 p{ /*Descendatant Selector - apply when content is not the direct child of the tag then we are using descendant selector and the method to write is to give space in between */
+            background-color: lightslategray;
+            padding: 10px;
+        }
+        *{ /*It's a Universal Selector with the help of this selector we can style all the tags which is present in our code..*/
+            margin: 0;
+            padding: 0;
+        }
+        h5 pre:hover{ /*Seudo selector - Here we are used descendant selector with seudo selector*/
+            background-color: black;
+            color: white;
+            padding-bottom: 40px;
+            font-size: 20px;
+        }
+        h5 pre{
+            background-color: lightseagreen;
+            font-size: 200%;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors</h1>
+    <h2>Element Selector</h2>
+    <h3 class="mohit">Class Selector</h3>
+    <p id="aman">Id selector</p>
+    <div>
+    <p>Child Selector</p></div>
+    <h4><article><p>Hello I am a descendant Selector!</p></article></h4> <!--Here you see the content which is present in the tag inside the tag so here we are using descendant Selector method-->
+    <!--Seudo Selectors are those selectors which is done by a tag colon and value
+    Example - a:hover -> This is a pseudo Sekectors.-->
+    <h5><p><pre>Hello the name is Jarvis an A.I hover me to see the effect done by seudo selector</pre></p></h5>
+
+</body>
+</html>

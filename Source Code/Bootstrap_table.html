@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Tables</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container mt-3">
+    <h1>Bootstrap Tables</h1>
+    <p>.table class adds basic styling (light padding and horizontal dividers) to a table.Only you just need to give the
+      class .table to the table tag</p>
+    <table class="table table-striped table-bordered table-hover">
+      <!--table-striped is used to give the background color to the even rows of the table and table-bordered is used to add border to the table-->
+      <thead class="table-success">
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mohit</td>
+          <td>Pratap Singh</td>
+          <td>mohitpratapsingh198@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Aman</td>
+          <td>Sisodia</td>
+          <td>amansisodia17@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Srishti</td>
+          <td>Tomar</td>
+          <td>srishtitomar123@gmail.com</td>
+        </tr>
+      </tbody>
+
+    </table>
+    <br>
+    <h3>table-hover property allows you to hover on the elements of the table.</h3>
+    <table class="table table-hover">
+      <!--table-striped is used to give the background color to the even rows of the table and table-bordered is used to add border to the table-->
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mohit</td>
+          <td>Pratap Singh</td>
+          <td>mohitpratapsingh198@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Aman</td>
+          <td>Sisodia</td>
+          <td>amansisodia17@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Srishti</td>
+          <td>Tomar</td>
+          <td>srishtitomar123@gmail.com</td>
+        </tr>
+      </tbody>
+
+    </table>
+    <br>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+
+    <body>
+
+      <div class="container mt-3">
+        <h2>Contextual Classes</h2>
+        <p>Contextual classes can be used to color the table, table rows or table cells. The classes that can be used
+          are: .table-primary, .table-success, .table-info, .table-warning, .table-danger, .table-active,
+          .table-secondary, .table-light and .table-dark:</p>
+        <table class="table table-hover">
+          <thead class="table-dark">
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Default</td>
+              <td>Defaultson</td>
+              <td>def@somemail.com</td>
+            </tr>
+            <tr class="table-primary">
+              <td>Primary</td>
+              <td>Joe</td>
+              <td>joe@example.com</td>
+            </tr>
+            <tr class="table-success">
+              <td>Success</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr class="table-danger">
+              <td>Danger</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+            </tr>
+            <tr class="table-info">
+              <td>Info</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+            </tr>
+            <tr class="table-warning">
+              <td>Warning</td>
+              <td>Refs</td>
+              <td>bo@example.com</td>
+            </tr>
+            <tr class="table-active">
+              <td>Active</td>
+              <td>Activeson</td>
+              <td>act@example.com</td>
+            </tr>
+            <tr class="table-secondary">
+              <td>Secondary</td>
+              <td>Secondson</td>
+              <td>sec@example.com</td>
+            </tr>
+            <tr class="table-light">
+              <td>Light</td>
+              <td>Angie</td>
+              <td>angie@example.com</td>
+            </tr>
+            <tr class="table-dark">
+              <td>Dark</td>
+              <td>Bo</td>
+              <td>bo@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br>
+
+<div class="container mt-3">
+  <h2>Responsive Table</h2>
+  <p>The .table-responsive class adds a scrollbar to the table when needed:</p>
+  
+  <div class="table-responsive"> <!--isko class ko hum div pe lagayenge table-responsive is used to provide the responsiveness to the table it will provide tha scrollvar that helps to move horizontally whole page will not move only the table will move this is called responsiveness of the table-->
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+          <th>City</th>
+          <th>Country</th>
+          <th>Sex</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Anna</td>
+          <td>Pitt</td>
+          <td>35</td>
+          <td>New York</td>
+          <td>USA</td>
+          <td>Female</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+  <div class="table-responsive-sm"> <!--it will give the scrollbar to the small screen devices resize the window to see the effect-->
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+          <th>City</th>
+          <th>Country</th>
+          <th>Sex</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Anna</td>
+          <td>Pitt</td>
+          <td>35</td>
+          <td>New York</td>
+          <td>USA</td>
+          <td>Female</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+  </div>
+
+</body>
+
+</html>

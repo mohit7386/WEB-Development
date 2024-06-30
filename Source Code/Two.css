@@ -1,0 +1,18 @@
+table{
+    border-collapse: collapse; /*iski help se jo alag alag border aa rha hai table header pe aur table data pe usko hum collapse krke ek border me kar lenge with the help of this property*/
+}
+th,td{
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+}
+th{
+    background-color: lightskyblue;
+    color: black;
+}
+tr:hover td{ /*Apply the hover effect on the table data elements only if you want to give the hover effect on the table header elements then use same property with th*/
+  background-color: lightgray;
+}
+span,.mohit{
+    border: 2px solid black;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        .boxes::before{ /*This is a seudo Property this will add your content before the div and before all the content*/
+            content: "Mohit is a Good Coder";
+            color: red; 
+        }
+        .boxes::after{
+            content: "Hey there I have completed 33 videos of web development";
+            color: blue;
+        }
+        ::selection{/*it is used when you try to select the content then the background color of the content changes and turns into black and color also changes which is something.*/
+            background-color: black;
+            color: rgb(239, 234, 234);
+        }
+        .box::first-letter{
+            color: rgb(159, 80, 1);
+            font-size: 40px;
+        }
+        .mohit::first-line{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Selectors</h2>
+    <div class="boxes">
+        <div class="box">Mohit</div>
+        <div class="box">Pratap </div>
+        <div class="box">Singh</div>
+        <div class="mohit">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla magnam laboriosam veritatis commodi voluptatum, officiis, perferendis tempora maxime molestias excepturi architecto tempore, iure similique ducimus fugit eos enim? Voluptate, at.</div>
+    </div>
+</body>
+</html>

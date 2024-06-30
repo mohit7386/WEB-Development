@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Card same as Bootstrap</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            border: 1.5px solid rgb(221, 214, 214);
+            width: 279.2px;
+            padding: 0px 0px 20px 0px;
+            margin: 0px auto;  
+            border-end-end-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        .item{
+            width: 280px;
+            /* padding: 10px; */
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(30, 30, 30);    
+        }
+        .big-para{
+            padding: 0px 22px;
+            font-size: 20px;
+            font-weight: 647;
+            margin-top: 8px;
+        }
+        .small-para{
+            padding: 0px 22px;
+            font-size: 16px;
+            font-weight: 497;
+            text-align: justify;
+            margin-top: -13px;
+        }
+        .item.button{
+            background-color: rgb(49, 132, 239);
+            color: white;
+            border: none;
+            text-align: center;
+            padding: 8px 8px;
+            font-size: 15px;
+            font-weight: 500;
+            border-radius: 4px;
+            width: fit-content;
+            margin: 0px 0px 0px 23px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            cursor: pointer;
+            
+        }
+        .button:hover{
+            background-color: rgb(9, 109, 241);
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Card Same as Bootstrap</h1>
+    <span class="container">
+        <div class="item"><img src="./flower-729512_640.jpg" alt=""width="280px"></div>
+        <div class="item"><p class="big-para">Card title</p><p class="small-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro velit neque voluptate dolor nisi, laborum inventore atque facere consectetur eum!</p></div>
+        <button class="item button">Go somewhere</button>
+    </span>
+</body>
+</html>

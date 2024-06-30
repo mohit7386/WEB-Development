@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox - 2</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            display: flex;/*this property is used to create a flex container and allows its children to become flexible and participate in the layout. By default the flex container direction is set to row and items are setting horizontally by default*/
+             justify-content: center; /*Center flex-items along the main axis*/
+            height: 70vh;
+             align-items: center; /*Center flex-items along the cross axis means vertically.*/
+            /* flex-direction: row; */
+            /* flex-wrap: wrap; */
+            /* align-content: center; When we have more than one line and when we are using flex-wrap then we use only align-content: center; in place of align-items: center; */
+            /*We do not have justify-items in our flexbox only we have the justify-content*/ 
+            gap:20px 30px;
+            /* flex-flow: row wrap; */
+            
+        }
+        .box{
+            height: 95px;
+            width: 95px;
+            background-color: lightgreen;
+            border: 2px solid black;
+            /* margin: 2px;  */
+            text-align: center;
+            flex-grow: 1;/*distributed space equally in between them*/
+        }
+        .item1{
+            flex-grow: 2;/*It takes twice the space as compare to other items*/
+            /*kisi ek particular item pe agar flegrow lagana ho to saare items pe bhi pehle lagana hoga size equal karna hoga tab ek particular item pe lagao warna ye saara available space item1 le lega */
+            flex-shrink: 2; /*It property is used to shrink the size of the element when resize the window*/
+            align-self: flex-end;
+        }
+        .order-1{ /*Order property is a child property in which we can give the order to the child and make changes in the particular child*/
+            background-color: rgb(241, 154, 154);
+            order: -4;
+            border: 2px solid rgb(241, 154, 154);
+        }
+        .order-2{
+            order: -3;
+            background-color: yellow;
+            border: 2px solid yellow;
+        }
+        .order-3{
+            order: -2;
+            background-color: rgb(240, 52, 52);
+            border: 2px solid rgb(240, 52, 52);
+        }
+        .order-4{
+            order: -1;
+            background-color: green;
+            border: 2px solid green;
+            align-self: flex-end;
+        }
+        .order-5{
+            background-color: aqua;
+            border: 2px solid aqua;
+        }
+        .order-6{
+            background-color: rgb(187, 118, 251);
+            border: 2px solid rgb(187, 118, 251);
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box order-1 item1">1</div>
+        <div class="box order-2">2</div>
+        <div class="box order-3">3</div>
+        <div class="box order-4">4</div>
+        <div class="box order-5">5</div>
+        <div class="box order-6">6</div> 
+        
+    </div>
+</body>
+</html>

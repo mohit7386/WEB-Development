@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        img{
+            width: 80%;
+            margin: 0px 150px 10px 150px;
+        }
+        .image1{
+            filter: brightness(180%)contrast(200%) sepia(30%)opacity(0.8);
+         }
+         .image2{
+            filter: drop-shadow(1px 12px 12px red)invert(100%); /*Drop shadow is far better than box shadow try to use drop shadow with css filter property
+         }
+         .image3{
+            filter: saturate(600%);
+            /*grayscale(100%) - If you want to make your image black and white then you need to use this property*/
+         }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="image1" src="./MainAfter.webp" alt="Frog image">
+        <img class="image2" src="./digital_camera_photo-1080x675.jpg" alt="camera image">
+        <img class="image3" src="./camera-canon-girl-lens.jpg" alt="photography with girl image">
+    </div>
+</body>
+</html>

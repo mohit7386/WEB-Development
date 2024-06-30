@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Grid System 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid mt-2 text-center"> <!--text-center Property allows you to center the text of the bootstrap-->
+        <div class="row"> <!--first you need to add row if you want to add columns in it-->
+        <div class="col-sm-1 p-3 text-bg-dark text-center">Home</div>
+        <div class="col-sm-1 p-3 text-bg-warning text-center">About Us</div>
+        <div class="col-sm-1 p-3 text-bg-primary text-center">Careers</div>
+        <div class="col-sm-1 p-3 text-bg-danger text-center">Contact Us</div>
+    <div class="col-sm-6 bg-success"></div>
+    <div class="col-sm-2 text-bg-dark">Our Products</div></div><!--always use the text-bg-color property for coloring the background and no need to mention the color of the text and background bootstrap will automatically handle the layout..-->
+        <p>Responsive Columns for small screen devices which has less then 576px width..Resize the window to see the effect.</p>
+        <!--here we are creating the four equal columns they will stack each other and this is for small screen devices which has width less than 576px-->
+        <!--it's important to note that the classes like col-sm-1 are part of Bootstrap's responsive grid system, which means they can apply styles not just to small screens, but also to larger screens depending on the viewport width and the specific classes applied.-->
+    </div>
+    <div class="container mt-5 text-center">
+        <p>These are the display classes which is stand out more than normal headings.</p>
+        <h1 class="display-1">Display - 1 </h1>
+        <h1 class="display-2">Display - 2</h1>
+        <h1 class="display-3">Display - 3</h1>
+        <h1 class="display-4">Display - 4</h1>
+        <h1 class="display-5">Display - 5</h1>
+        <h1 class="display-6">Display - 6</h1><br>
+        <p>For Copying the any content you can use <kbd>ctrl + C</kbd> and for pasting the content you can use <kbd>ctrl + V</kbd> ..this can be done with the help of kbd tag.</p>
+    </div>
+</body>
+</html>

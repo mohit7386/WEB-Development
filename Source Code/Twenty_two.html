@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container {
+            /* border: 2px solid black; */
+            margin: 10px;
+            padding: 50px;
+            display: flex;
+            /*It helps to placed the boxes horizontally in the same line which is present in the container div...Change the position vertical to the horizontal*/
+            gap: 20px;
+            /*It is used for creating the gap between the boxes*/
+            height: 100vh;
+            /* flex-direction: column; this property will change the direction of the content or boxes here the previous direction is horizontal because of flex but after using this prperty layout will be displayed as vertically*/
+            /*The default flexbox direction will be the left to right the content and boxes will move in the direction of the left to right..so the main -axis will be horizontally and cross axis will be vertical when the flex-direction is row ehich is default direction and when the direction is column then the main axis will be in the vertical direction and cross axis will be in the horizontal direction.*/
+        }
+
+        .box {
+            /* border: 2px solid black; */
+            padding: 10px;
+            /* flex-basis: 100px; this property is used to change in the height and width of the layout on the basis of flex direction if the direction is flex means horizontal then it increases or decreases the width of the layout and same for verical direction*/
+        }
+
+        .box:nth-child(1) {
+            background-color: rgb(252, 210, 216);
+            border: 2px solid rgb(252, 210, 216);
+            padding: 20px;
+        }
+
+        .box:nth-child(2) {
+            background-color: rgb(171, 171, 254);
+            border: 2px solid rgb(185, 185, 253);
+            padding: 20px;
+        }
+
+        .box:nth-child(3) {
+            background-color: rgb(234, 249, 173);
+            border: 2px solid rgb(234, 249, 173);
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        .box:nth-child(3):hover {
+            background-color: rgb(224, 251, 114);
+        }
+
+        .box:nth-child(2):hover {
+            background-color: rgb(142, 142, 252);
+        }
+
+        .box:nth-child(1):hover {
+            background-color: rgb(252, 166, 179);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .mohit {
+            display: flex;
+            /* flex-direction: ; */
+            /* border:5px solid yellow; */
+            text-align: center;
+            position: sticky;
+            top: 0px;
+            flex-wrap: wrap;
+            /*This property is used to wrap the content when overflow when you resize the window then we use this property after using this-> your overflowed content will display in the next line.*/
+            justify-content: center;
+        }
+
+        .lucky {
+            padding: 20px;
+            flex-basis: 208px;
+            /*Used to increase the width of the container elements when main axis points right to left means display:flex; then we use this property for increase in the width*/
+        }
+
+        .lucky1 {
+            background-color: rgb(241, 72, 72);
+            color: white;
+        }
+
+        .lucky2 {
+            background-color: rgb(116, 237, 116);
+        }
+
+        .lucky3 {
+            background-color: yellow;
+        }
+
+        .lucky4 {
+            background-color: orange;
+        }
+
+        .lucky5 {
+            background-color: rgb(123, 123, 244);
+        }
+
+        .lucky6 {
+            background-color: aqua;
+        }
+
+        .mohit1 {
+            border: 5px solid yellow;
+            display: flex;
+            /* flex-direction: row; */
+            /*when you use the display:flex and flex-direction property at the same time then it takes the whole width because of block level element so that's why we need to set the display:inline-flex because it takes only the needed width*/
+            /* margin-left: 20px; */
+            /* margin-top: 40px; */
+            justify-content: center;
+        }
+
+        .lucky0 {
+            padding: 20px;
+            flex-basis: 40px;
+            /*We can only use this property on the child not on the parent we only use in the child*/
+            text-align: center;
+        }
+
+        .lucky10 {
+            background-color: aquamarine;
+            order: 6;
+            /*We can also give the order to the child and change the position of the child or element using order and which has lowest order will always on the top and higher order which always on the lowest*/
+        }
+
+        .lucky20 {
+            background-color: beige;
+            order: 5;
+        }
+
+        .lucky30 {
+            background-color: rgb(243, 96, 96);
+            order: 4;
+
+        }
+
+        .lucky40 {
+            background-color: skyblue;
+            order: 3;
+        }
+
+        .lucky50 {
+            background-color: rgb(97, 228, 97);
+            order: 2;
+        }
+
+        .lucky60 {
+            background-color: rgb(249, 150, 150);
+            order: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Flexbox</h1>
+    <div class="mohit">
+        <div class="lucky lucky1">Home</div>
+        <div class="lucky lucky2">Our Products</div>
+        <div class="lucky lucky3">Careers</div>
+        <div class="lucky lucky4">Email</div>
+        <div class="lucky lucky5">About Us </div>
+        <div class="lucky lucky6">Contact Us</div>
+    </div><br>
+    <div class="mohit1">
+        <div class="lucky0 lucky10">Home</div>
+        <div class="lucky0 lucky20">Our Products</div>
+        <div class="lucky0 lucky30">Careers</div>
+        <div class="lucky0 lucky40">Email</div>
+        <div class="lucky0 lucky50">About Us </div>
+        <div class="lucky0 lucky60">Contact Us</div>
+    </div>
+    <div class="container">
+        <div class="box box1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, sapiente? Ratione ullam
+            tempore deserunt facilis dignissimos atque distinctio at illum. Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Porro suscipit quasi minus nihil quaerat, enim impedit corrupti provident vel facilis!
+            Sunt maiores vel fugiat provident alias rem repellendus distinctio cum repudiandae tenetur accusantium iusto
+            odit placeat facere officiis odio rerum harum eum voluptas voluptatem incidunt, autem officia sequi
+            accusamus? Placeat distinctio fugiat, atque iure ab omnis voluptas ipsum aspernatur in veniam facilis optio
+            voluptatum odit nihil accusantium magni assumenda, voluptatibus reiciendis quod velit aliquid odio
+            doloremque! Modi in minus, corporis pariatur tempore optio sunt eligendi delectus numquam commodi natus quos
+            ex veritatis neque nam fuga ad nemo incidunt quis at velit consectetur est? Veniam voluptatem odit
+            temporibus, reprehenderit obcaecati ullam molestiae est recusandae, autem neque ut aliquid fugiat deleniti.
+            Assumenda, veniam mollitia. Officiis iste, itaque deleniti quos quis, necessitatibus culpa ducimus neque
+            ullam nisi eum nemo distinctio voluptas doloremque cumque. Fugiat est eaque, blanditiis voluptas atque unde
+            tempore tempora laborum nemo deleniti. Reiciendis veniam aperiam, totam ea magni vel ipsam soluta illum
+            architecto similique! Eos, quod excepturi. Ipsum asperiores commodi molestiae a, tempora id. Praesentium
+            minima cupiditate perferendis soluta eum dolores deleniti rerum beatae explicabo dolor laboriosam, suscipit
+            dignissimos et quibusdam optio error consequatur illo, odit quis quae eveniet accusamus? Lorem, ipsum dolor
+            sit amet consectetur adipisicing elit. Veritatis assumenda iusto, quae saepe nostrum error minus asperiores
+            quos aperiam, nisi sapiente possimus nam aspernatur est dolor suscipit laudantium tempore deleniti, atque
+            deserunt! Non quas doloribus perferendis, quis autem rem inventore provident aspernatur temporibus solinctio
+            ex deserunt voluptate reprehenderit sint laudantium, velit quo soluta beatae doloribus molestiae
+            exercitationem molestias repellendus corrupti recusandae architecto in sapiente non nobis quidem
+            tenassumenda.</div>
+        <div class="box box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum culpa magni omnis,
+            perspiciatis ad modi illum odit maiores excepatis unde laborum eaque. Vel quasi hic nulla atque recusandae
+            nostrum, illum architecto eum rerum sed explicabo totam quos commodi ullam neque molestias magni consectetur
+            quis harum. Obcaecati consectetur reprehenderit atque eaque odio dolorem et, culpa labore facilis expedita
+            quo sapiente, esse excepturi deleniti hic qui. Amet, mollitia? Explicabo, totam debitis sed quod odit
+            ratione ullam eveniet itaque at id et necessitatibus quasi provident veniam nesciunt repudiandae minima,
+            repellendus dolorem perferendis exercitationem doloribus! Minima ratione reiciendis explicabo tenetur
+            eligendi molestias reprehenderit fugiat laboriosam perspiciatis aspernatur expedita nisi sapiente saepe
+            facilis mollitia quod, excepturi quia? Illo provident praesentium ratione sapiente asperiores optio dolorum
+            earum ut quisquam est omnis incidunt impedit nulla nesciunt, voluptatem reprehenderit labore libero
+            voluptates! Eaque quo nesciunt dolore ratione facilis eos atque nostrum praesentium porro ea voluptatem quas
+            quos quisquam eveniet ullam, accusamus esse. Optio nisi totam quae minus recusandae corrupti illo debitis
+            quaerat esse, voluptatem, pariatur beatae labore fugit provident excepturi, tempora consectetur. Et,
+            distinctio vel, a enim atque placeat ab voluptate assumenda ea, ullam odio quasi sapiente possimus eaque rem
+            sed quod maxime voluptatem natus error esse officia at? Maiores perferendis quae exercitationem modi error
+            praesentium minus molestiae vitae iusto doloribus explicabo cum inventore asperiores fugit, sint quisquam
+            natus sit iure dolorem ratione repellat optio nesciunt? Dolorem, ex? Ex at, corporis molestiae, sed
+            repellat, debitis voluptate dolor excepturi similique maiores commodi fugit. Debitis molestias ut quas vero
+            modi odit, error consequuntur animi corrupti repellendus, libero minima tenetur veritatis alias consectetur
+            beatae facere delectus sed corporis impedit aut! Minima aperiam accusantiubo </div>
+        <div class="box box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum culpa magni omnis,
+            perspiciatis ad modi illum odit maiores excepturi officiis. Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Neque expedita eaque error vero aliquam, natus quos quia ipsum, numquam, impedit amet
+            nisi! Doloribus labore assumenda nam? Deserunt earum consequatur, eum, expedita quae repellendus blanditiis
+            reprehenderit, natus distinctio officia quas cupiditate in quis beatae accusantium adipisci enim libero
+            sapiente accusamus? Facilis distinctio soluta rerum ipsum incidunt optio rem, quasi mollitia minima.
+            Dignissimos, quaerat eius! Molestias architecto est vero perspiciatis consequatur atque dolore inventore
+            accusamus aut unde quaerat, a repellat ratione maxime explicabo id nesciunt neque debitis. Eum obcaecati
+            repellat iure nesciunt quidem, magni provident maiores quod expedita corrupti inventore aliquam eveniet.
+        </div>
+    </div>
+</body>
+
+</html>

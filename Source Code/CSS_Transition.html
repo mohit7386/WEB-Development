@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <style>
+        .container{
+            width: 50vw;
+            height: 50vh;
+            background-color: lightgreen;
+            border: 5px solid black; 
+        }
+        .box{
+            width: 10vw;
+            height: 10vh;
+            background-color: rgb(248, 109, 109);
+            /*Transition Property is mainly used for move anything very smoothly...it slows down the speed by using the properties in it*/
+            /*transition-property: transform; Kis Property mein hum transition karna chah rahe hain */
+            /*transition-property: all;
+            transition-duration: 3s; /*This Property tells ki kitni der tak ye transition hoga mtlb ki 3s diya hai that means ki 3s lagenge box ko apni position pe jaane mein*/
+            /*transition-timing-function:ease; 
+            transition-delay: 0.4s;
+            It is nothing but a delay it means ki kitni der baad ispe transition apply hoga*/
+            /*Shorthand Property*/
+            transition: all 3s ease-in-out 0.4s; /*This is a shorthand Property for providing transition to the element in only one property*/
+        }
+        .translate{
+            transform: translateX(13vw)translateY(13vh)scale(3); /*scale property is used to increase the size of the item or box*/
+            background-color: yellow;
+            /* It helps the box to move in the direction of horizontal and vertical X represents the horizontal direction and Y represents the vertical direction */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate">
+        </div>
+    </div>
+</body>
+</html>

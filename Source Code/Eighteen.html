@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        /*Defining the variable so that we can use it later in our whole website these are global Variables.*/
+        :root{
+            --color: rgb(120, 110, 110);
+            --seccolor: rgb(231, 147, 147);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+          .nav{
+            background-color: var(--seccolor);
+          }
+          .container{
+            color: var(--color);
+            margin: 10px;
+            text-align: justify;
+          }
+          li:first-child{
+            --seccolor: black; /*Defining the variable locally...and it works perfectly when you are removing the global variable because here we are overiding the color and background color that's why.. */
+            --color: white;
+            background-color: var(--seccolor) ;
+            color: var(--color);
+          }
+          li:nth-child(2){
+            --seccolor:rgb(65, 170, 111);
+            --color:white;
+            background-color: var(--seccolor);
+            color: var(--color);
+          }
+          li:nth-child(3){
+            --seccolor:rgb(218, 224, 43);
+            --color:black;
+            background-color: var(--seccolor);
+            color: var(--color);
+          }
+          
+          ul li{
+            list-style: none;
+            padding: 50px;
+            width: 120px;
+            text-align: center;
+            /* margin: 0px; */
+            /* border: 2px solid black; */
+          }
+          ul{
+            display: flex;
+            /* padding: 30px; */
+            --seccolor:white;
+            background-color: var(--seccolor);
+          }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>Contact Us</li>
+            <li>About Us</li>
+        </ul>
+    </div>
+    <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, aspernatur maxime neque ex doloribus tenetur porro corrupti dignissimos illum quisquam labore necessitatibus doloremque! Repudiandae hic quam voluptate corporis eveniet nulla. Dolore, quo dignissimos! Ut magnam, aspernatur blanditiis soluta molestias inventore animi mollitia a ipsam assumenda reiciendis cupiditate unde necessitatibus velit!</div>
+</body>
+</html>

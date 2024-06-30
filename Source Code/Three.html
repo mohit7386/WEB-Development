@@ -1,0 +1,50 @@
+<!--HTML Forms -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In this webpage we are designing the HTML Forms">
+    <meta name="author" content="Mohit Pratap Singh">
+    <title>HTML Forms</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h2>Signup Form</h2>
+    <div>
+    <form>
+        <label for="Name">Enter Your Name:</label>
+        <input type="text" id="Name" name="Name"placeholder="Enter Your Name"required autofocus> <!--autofocus is used to focus into the particular thing when you reload the page then cursor blinks on that box where autofocus is placed-->
+        <br><br>
+        <label for="email">Enter Your Email:</label>
+        <input type="password" id="email" name="email" placeholder="Enter Your Email"required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"required placeholder="**********"><br><br>
+        <label>Gender</label>
+        <input type="radio" id="male" name="gender" value="male"required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female"required>
+        <label for="female">Female</label>
+        <br><br>
+        <input type="file" id="Resume" value="Resume" name="Resume">
+        <label for="Resume"></label><br><br>
+        <label for="Comments">Enter Your Thoughts:</label><br>
+        <textarea name="Comments" rows="8" cols="38"placeholder="Enter Your Thoughts"></textarea><br><br>
+        <label for="city">Select Your City:</label>
+        <select name="Enter City" id="City">
+            <option value="Select">Select</option>
+            <option value="Mumbai">Bairmai Khurd</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Mumbai">Delhi</option>
+            <option value="Mumbai">Noida</option>
+            <option value="Mumbai">Bareilly</option>
+            <option value="Mumbai">Patna</option>
+            <option value="Mumbai">Bihar</option>
+            <option value="Mumbai">Dehradun</option>
+            <option value="Mumbai">Kullu manali</option>
+        </select><br><br>
+        <input type="submit">
+
+    </form></div>
+</body>
+</html>

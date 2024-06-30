@@ -1,0 +1,52 @@
+div{
+    background-color: rgb(45, 45, 45);
+    margin: 48px;
+    border: 1px solid rgb(215, 211, 211);
+    border-radius: 10px;
+}
+p{
+    text-align: justify;
+    margin: 50px;
+}
+h1{
+    text-align: center;
+    color: white;
+    text-shadow: 4px 2px 7px;
+}
+h1:hover{
+    color: yellow;
+    transition: color 4.2s ease;
+}
+h2{
+margin-left: 45px;
+}
+code:hover{
+    color: yellow;
+    text-shadow: 4px 2px 7px;
+}
+code{
+    color: white;
+}
+body{
+    border: 2px solid black;
+}
+li{
+    padding: 20px;
+    background-color: rgb(197, 194, 194);
+    color: black;
+    margin-left: -1.5px;
+    
+}
+li:hover{
+    background-color: seagreen;
+    color: white;
+    font-size: 157%;
+    padding: 20px;
+}
+ul{
+    border-radius: 50px;
+}
+header{
+    background-color: rgb(45, 45, 45);
+    padding: 30px;
+}

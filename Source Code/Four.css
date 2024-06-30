@@ -1,0 +1,35 @@
+.mohit{
+    background-color: rgb(224, 196, 250);
+    border: 2px solid black;
+    padding: 20px;
+}
+#lucky{
+    background-color: aquamarine;
+    border: 2px solid black;
+    padding: 20px;
+}
+.mohit:hover{
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    transition: background-color 1.5s ease;
+}
+#lucky:hover{
+    background-color: rgb(219, 245, 169);
+    border-radius: 30px;
+    transition: background-color 1.2s ease;
+}
+h1{
+    text-shadow: 8px 5px 9px;
+}
+a{
+    text-decoration: none;
+    border: 1px solid black;
+    color: black;
+    background-color: whitesmoke;
+    padding: 2.3px;
+}
+.aman{
+    padding: 13px;
+    text-align: justify; /*It's a property to align all the lines in the same size in left and right*/
+}
