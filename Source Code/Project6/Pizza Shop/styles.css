@@ -52,7 +52,7 @@ header {
   box-shadow: 0 0.5rem 50rem rgba(14, 13, 13, 0.1);
 }
 .logo {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   color: var(--main-color);
 }
@@ -60,7 +60,7 @@ header {
   display: flex;
 }
 .navbar a {
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding: 10px 20px;
   color: var(--text-color);
   font-weight: 500;
